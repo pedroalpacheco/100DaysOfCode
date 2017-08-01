@@ -1,0 +1,34 @@
+** Alert 1501556415.0: - pam,syslog,
+2017 Aug 01 00:00:15 servername01->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+Aug  1 00:00:13 servername01 sshd[29362]: pam_unix(sshd:session): session closed for user nrtv
+
+** Alert 1501556445.226: - syslog,sshd,authentication_success,
+2017 Aug 01 00:00:45 servername01->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 209.25.162.12
+User: nrtv
+Aug  1 00:00:44 servername01 sshd[2789]: Accepted password for nrtv from 209.25.162.12 port 10488 ssh2
+
+** Alert 1501556445.526: - pam,syslog,authentication_success,
+2017 Aug 01 00:00:45 servername01->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+Aug  1 00:00:44 servername01 sshd[2789]: pam_unix(sshd:session): session opened for user nrtv by (uid=0)
+
+** Alert 1501556445.787: - syslog,sudo
+2017 Aug 01 00:00:45 servername01->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: nrtv
+Aug  1 00:00:44 servername01 sudo:     nrtv : TTY=unknown ; PWD=/dados/jail/home/nrtv ; USER=root ; COMMAND=/usr/sbin/chroot /home/jail /bin/su - nrtv -c /usr/lib/openssh/sftp-server
+
+** Alert 1501556703.1125: - ids,
+2017 Aug 01 00:05:03 servername01->/var/log/syslog
+Rule: 20101 (level 6) -> 'IDS event.'
+Src IP: 95.65.39.157
+Aug  1 00:05:02 servername01 suhosin[613]: ALERT - ASCII-NUL chars not allowed within request variables - dropped variable 'secao' (attacker '95.65.39.157', file '/dados/www/server2000/html/cremm/portugues/cremm.php')
+
+** Alert 1501556703.1477: - ids,
+2017 Aug 01 00:05:03 servername01->/var/log/syslog
+Rule: 20101 (level 6) -> 'IDS event.'
+Src IP: 95.65.39.157
+Aug  1 00:05:02 servername01 suhosin[613]: ALERT - ASCII-NUL chars not allowed within request variables - dropped variable 'secao' (attacker '95.65.39.157', file '/dados/www/server2000/html/cremm/portugues/cremm.php')
