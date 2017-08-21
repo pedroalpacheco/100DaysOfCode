@@ -33,7 +33,6 @@ row_cells[0].text = '10'
 row_cells[1].text = '2'
 row_cells[2].text = 'Spam'
 
-last_modified_by()
 
 '''
 for item in recordset:
