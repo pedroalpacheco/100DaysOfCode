@@ -8,13 +8,10 @@
 
 #A soma dos quadrados dos cem primeiros números naturais é?
 
-numeros = range(1, 4)
+#Eleva a potencia a lista
+lista = [x**2 for x in range(1,100)]
 
-
-#Potencializa ao quadrado os numeros do range
-for num in numeros:
-    quadrado = num ** 2
-    print(quadrado)
-#Falta somar!
-
-#------------------------------------------------------------
+#soma os resultados elevados a potencia
+resultado = (sum(lista))
+print('A soma dos quadrados dos cem primeiros números naturais é : {}'.format(resultado))
+#================================================================
