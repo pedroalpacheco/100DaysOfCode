@@ -16,6 +16,9 @@ No shell executar o comando:
 
 fab --port 10022 -u pop -H servidor.algumlugar host_type(comando criado na função no arquivo fabfile.py)
 
+Comandos:
+fab --list = Lista os comandos disponíveis
+
 Detalhes:
 Para Fabric funcionar com python3 é necessário instalar:
 >pip3 install fabric3
