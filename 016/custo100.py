@@ -13,7 +13,7 @@ def salariohora(salario, horastrab):
     return vlcemformat
 
 
-horascem = salariohora(4128, 160)
+horascem = salariohora(3500, 160)
 
 print('Para ganha R$ 100 voce deve trabalhar {} horas'.format(horascem))
 
