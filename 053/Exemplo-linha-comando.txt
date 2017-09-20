@@ -1,0 +1,1 @@
+ fab --port=20022 -u user -p ******* -H servidor host_type
