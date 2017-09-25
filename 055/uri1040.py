@@ -1,12 +1,7 @@
 notas = input().split(' ')
 Num, Ndois, Ntres, Nquatro = notas
 
-#Média
-notapesoUM = float(Num) * 2 / 10
-notapesoDOIS = float(Ndois) * 3 / 10
-notapesoTRES = float(Ntres) * 4 / 10
-notapesoQUATRO = float(Nquatro) * 4 / 10
-MEDIA = notapesoUM + notapesoDOIS + notapesoTRES + notapesoQUATRO / 4
+MEDIA = ((float(Num)*2)+(float(Ndois)*3)+(float(Ntres)*4)+float(Nquatro))/10
 
 
 if MEDIA >= 7.0:
@@ -19,7 +14,7 @@ elif MEDIA < 5.0:
 elif MEDIA > 5.0 and MEDIA < 6.9:
     print('Media: {:.1f}'.format(MEDIA))
     print('Aluno em exame.')
-    #notaEXAME = float(input('Nota do exame: '))
+
     notaEXAME = float(input( ))
     totExame = (notaEXAME + MEDIA) / 2
     if totExame < 4.9:
