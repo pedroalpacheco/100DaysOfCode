@@ -16,6 +16,7 @@ else:
     print("Q4")
 
 """
+#erro 40%
 coordenadas = input().split(' ')
 x, y = coordenadas
 
